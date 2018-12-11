@@ -1,0 +1,119 @@
+{  
+    "invocation":"andrew gamble",
+    "intents":[ 
+        {
+            "name" : "FavouriteAnimalIntent",
+            "phrases": [
+                "favourite animal",
+                "what is your favourite animal",
+                "what is andrew's favourite animal",
+                "animal",
+                "what animal does andrew like",
+                "honey badger"
+            ]
+        },
+        {
+            "name": "FavouriteColorIntent",
+            "phrases": [
+                "favourite colour",
+                "what is your favourie colour",
+                "colour",
+                "what is andrew's favourite colour",
+                "what is andrew's colour",
+                "what colour does andrew like",
+                "what is the best colour",
+                "what is his favourite colour"
+            ]
+        },
+        {
+            "name": "WhereFromIntent",
+            "phrases": [
+                "where is andrew from",
+                "where is he from",
+                "what is andrew's hometown",
+                "where did andrew grow up",
+                "where is andrew's favourite place",
+                "where is he from",
+                "what is the best province",
+                "what is the best province in canada",
+                "home"
+            ]
+        },
+        {
+            "name": "FavouriteFruitIntent",
+            "phrases": [
+                "what is andrew's favourite fruit",
+                "what is the best fruit",
+                "what is his favourite fruit",
+                "does andrew like apples",
+                "fruit",
+                "favourite fruit"
+            ]
+        },
+        {
+            "name": "SchoolIntent",
+            "phrases": [
+                "where does andrew go to school",
+                "what university does andrew go to",
+                "university",
+                "school",
+                "what is the best university",
+                "what is andrew's favourite school",
+                "where does he go to school",
+                "what is his university"
+            ]
+        },
+        {
+            "name": "ProgramIntent",
+            "phrases": [
+                "what program is andrew in",
+                "what does andrew study",
+                "study",
+                "what program is andrew in",
+                "what is his program",
+                "what program is he in",
+                "what is the best program at waterloo"
+            ]
+        },
+        {
+            "name": "InstagramProfileIntent",
+            "phrases": [
+                "what is andrew's instagram",
+                "instagram handle",
+                "andrew instagram",
+                "what is his instagram"
+            ]
+        },
+        {
+            "name": "InstagramProfileIntent",
+            "phrases": [
+                "what is andrew's latest photo",
+                "latest photo",
+                "what is andrew's most recent photo",
+                "instagram photo",
+                "what is andrew's most recent photo",
+                "show me a photo from andrew's instagram"
+            ]
+        },
+        {
+            "name": "RandomPhotoIntent",
+            "phrases": [
+                "show me a random photo",
+                "random photo",
+                "show me one of andrew's pictures",
+                "show me a picture andrew took"
+            ]
+        },
+        {
+            "name": "LookLike",
+            "phrases": [
+                "what does andrew look like",
+                "picture of andrew",
+                "who is andrew",
+                "picture of andrew",
+                "show me a picture of andrew",
+                "photo of andrew"
+            ]
+        }
+    ]
+}

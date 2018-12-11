@@ -1,0 +1,12 @@
+{
+	"googleAction": {
+		"nlu": {
+			"name": "dialogflow"
+		},
+		"dialogflow": {
+			"projectId": "andrew-gamble",
+    		"keyFile": "andrew-gamble-b13f4438c9bc.json"
+    }
+	},
+	"endpoint": "https://webhook.jovo.cloud/831e00c7-5151-4cef-8aa2-d628b55d29d3"
+}

@@ -2,3 +2,4 @@ node_modules/
 db/
 andrew-gamble-b13f4438c9bc.json
 platforms/
+.vscode/

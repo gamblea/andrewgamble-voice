@@ -5,7 +5,7 @@ module.exports = {
         "Welcome to Andrew's voice assistant. What would you like to know?"
     ],
     transitions: [
-        "Ask: "
+        "Ask: ", ""
     ],
     intents: {
         favouriteColor: {

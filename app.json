@@ -1,4 +1,25 @@
 {
+	"defaultStage": "dev",
+	"stages": {
+		"dev": {
+			"endpoint": "https://webhook.jovo.cloud/831e00c7-5151-4cef-8aa2-d628b55d29d3"
+		},
+		"production" : {
+			"googleAction": {
+				"dialogflow": {
+					"endpoint": "https://dah1f6r8a3.execute-api.us-east-2.amazonaws.com/production"
+				}
+			},
+
+			"host": {
+                "lambda": {
+                    "arn": "arn:aws:lambda:us-east-2:483318071198:function:andrew-gamble-voice"
+                }
+            }
+		}
+	},
+
+
 	"googleAction": {
 		"nlu": {
 			"name": "dialogflow"
@@ -6,7 +27,6 @@
 		"dialogflow": {
 			"projectId": "andrew-gamble",
     		"keyFile": "andrew-gamble-b13f4438c9bc.json"
-    }
-	},
-	"endpoint": "https://webhook.jovo.cloud/831e00c7-5151-4cef-8aa2-d628b55d29d3"
+		}
+	}
 }

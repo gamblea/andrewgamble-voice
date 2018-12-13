@@ -11,7 +11,6 @@ const _ = require('lodash');
 const config = {
     logging: true,
 };
-
 const app = new App(config);
 
 
@@ -26,7 +25,7 @@ app.setHandler({
     },
 
     'FavouriteAnimalIntent': function() {
-
+        let prompts = content.GetPrompts(this, 2);
     },
 
     'FavouriteColorIntent': function() {

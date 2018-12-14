@@ -13,7 +13,8 @@ class Content {
 
         this.endingPrompts = [
             "Ask something else.",
-            "What else would you like to know.",
+            "Ask something else.",
+            "What else would you like to know?",
             "Good question, hit me with another one.",
             "Ask another question",
             "What else would you like to know?",
@@ -25,7 +26,7 @@ class Content {
         this.intents = {
             FavouriteColorIntent: {
                 prompts: ["What is Andrew's favourite colour?"],
-                answers: ["Blue", "Only the best colour ever. Blue!", "Gotta be blue", "The best colour ever. Blue", "Either blue, azul or bleu"]
+                answers: ["Blue.", "Only the best colour ever. Blue!", "Gotta be blue.", "The best colour ever. Blue", "Either blue or light blue."]
             },
             WhereFromIntent: {
                 prompts: ["Where is Andrew from?"],

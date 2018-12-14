@@ -19,10 +19,10 @@ const app = new App(config);
 // =================================================================================
 
 let buildGenericReponse = (name) =>  {
-    return function (name) {
+    return function () {
         content.UpdatePrompts(this, name);
         let prompts = content.GetPrompts(this, 2);
-        this.ask(`${_.sample(content.intents[name].answers)}. ${_.sample(content.transitions)} ${prompts[0]} or ${prompts[1]}`);
+        this.ask(`${_.sample(content.intents[name].answers)} ${_.sample(content.endingPrompts)}`);
     }
 }
 
@@ -32,33 +32,19 @@ app.setHandler({
         this.ask(_.sample(content.welcomes));
     },
 
-    'FavouriteAnimalIntent': function() {
-        content.UpdatePrompts(this, "FavouriteAnimalIntent");
-        let prompts = content.GetPrompts(this, 2);
-        this.ask(`${_.sample(content.intents.FavouriteAnimalIntent.answers)}. ${_.sample(content.transitions)} ${prompts[0]} or ${prompts[1]}`);
-    },
+    'FavouriteAnimalIntent': buildGenericReponse('FavouriteAnimalIntent'),
 
     'FavouriteColorIntent': buildGenericReponse('FavouriteColorIntent'),
 
-    'WhereFromIntent': function() {
+    'WhereFromIntent': buildGenericReponse('WhereFromIntent'),
 
-    },
+    'FavouriteFruitIntent': buildGenericReponse('FavouriteFruitIntent'),
 
-    'FavouriteFruitIntent': function() {
+    'SchoolIntent': buildGenericReponse('SchoolIntent'),
 
-    },
+    'ProgramIntent': buildGenericReponse('ProgramIntent'),
 
-    'SchoolIntent': function() {
-
-    },
-
-    'ProgramIntent': function() {
-
-    },
-
-    'InstagramProfileIntent': function() {
-
-    },
+    'InstagramProfileIntent': buildGenericReponse('InstagramProfileIntent'),
 
     'InstagramRecentIntent': function() {
 
@@ -72,13 +58,9 @@ app.setHandler({
 
     },
 
-    'MyNameIsIntent': function(name) {
-        this.tell('Hey ' + name.value + ', nice to meet you!');
-    },
-
     'HelpIntent': function() {
         let prompts = content.GetPrompts(this, 2);
-        this.ask(`${_.sample(content.helpStart)} ${_.sample(content.transitions)} ${prompts[0]} or ${prompts[1]}`);
+        this.ask(`${_.sample(content.helpStart)} ${prompts[0]} or ${prompts[1]}`);
     }
 });
 

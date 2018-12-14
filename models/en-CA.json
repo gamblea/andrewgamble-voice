@@ -114,6 +114,20 @@
                 "show me a picture of andrew",
                 "photo of andrew"
             ]
+        },
+        {
+            "name": "HelpIntent",
+            "phrases": [
+                "help",
+                "what can I ask",
+                "possible questions",
+                "questions",
+                "information",
+                "more information",
+                "help me",
+                "what should I ask",
+                "what have I not asked yet"
+            ]
         }
     ],
     "dialogflow": {
